@@ -1,0 +1,120 @@
+* {
+    margin: 1vw auto;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.chooseYourTeamColor {
+    padding: 1vw;
+    max-width: 80vw;
+    min-height: 20vw;
+    /* border: 0.5vw solid black; */
+    text-align: center;
+    justify-content: center;
+
+}
+
+.containerPlayerSelection {
+    display: flex;
+    flex-direction: row;
+    max-width: 70vw;
+    min-height: 20vw;
+    text-align: center;
+    justify-content: center;
+}
+
+.bluePlayer {
+    padding: 1vw;
+    width: 48%;
+    min-height: 20vw;
+    border: 0.5vw solid rgb(0, 4, 255);
+    text-align: center;
+    justify-content: center;
+}
+
+.redPlayer {
+    padding: 1vw;
+    width: 48%;
+    min-height: 20vw;
+    border: 0.5vw solid rgb(255, 0, 0);
+    text-align: center;
+    justify-content: center;
+}
+
+.containerBoard {
+    padding: 0.5vw;
+    max-width: 90vw;
+    min-height: 20vw;
+    /* border: 0.5vw solid black; */
+    text-align: center;
+    justify-content: center;
+    display: none;
+}
+
+.showingTheQueue {
+    display: flex;
+    flex-direction: row;
+    padding: 1vw;
+    max-width: 80vw;
+    min-height: 10vw;
+    text-align: center;
+    justify-content: center;
+}
+
+.turn {
+    padding: 1vw;
+    width: 48%;
+    min-height: 20vw;
+    text-align: center;
+    justify-content: center;
+    border: 0.5vw solid green;
+}
+
+.theQueueTimer {
+    padding: 1vw;
+    width: 48%;
+    min-height: 20vw;
+    text-align: center;
+    justify-content: center;
+    border: 0.5vw solid green;
+}
+
+.winner {
+    padding: 1vw;
+    width: 48%;
+    min-height: 20vw;
+    text-align: center;
+    justify-content: center;
+    border: 0.5vw solid green;
+}
+
+.board {
+    padding: 1vw;
+    max-width: 80vw;
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(8, 9vw);
+    grid-template-rows: repeat(8, 8vw);
+    gap: 0.8vw;
+}
+
+.cell {
+    width: 9vw;
+    height: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    border-radius: 3%;
+}
+
+.blue {
+    background-color: rgb(103, 103, 144);
+    color: blue;
+}
+
+.red {
+    background-color: rgb(124, 90, 90);
+    color: red;
+}
