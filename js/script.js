@@ -55,11 +55,12 @@ function containerPlayerSelection() {
         containerBoard.style.display = "block";
         currentTurn = 'red';
     }
-    // theTurn.textContent = `Current turn: ${currentTurn}`;
+
 
 }
 
 function startCountdown() {
+    clearInterval(countdownInterval);
     countdownValue = 10;
     timer.textContent = countdownValue;
     countdownInterval = setInterval(() => {
@@ -104,7 +105,6 @@ function initializeBoard() {
 }
 
 function changeTurn() {
-    clearInterval(countdownInterval);
     timerRunning = false;
     currentTurn = currentTurn === 'red' ? 'blue' : 'red';
     theTurn.textContent = `Current turn: ${currentTurn}`;
@@ -112,7 +112,5 @@ function changeTurn() {
 }
 function playerColor() {
     selectedColor = bluePlayerSelected ? 'Blue Player Selected' : 'Red Player Selected';
-    selectedColor = redPlayerSelectedPlayerSelected ? 'Red Player Selected' : 'Blue Player Selected';
-    console.log(selectedColor);
-
+    selectedColor = redPlayerSelected ? 'Red Player Selected' : 'Blue Player Selected';
 }
